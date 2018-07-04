@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeProject}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeMinor}[1]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2\\
+    \end{tabular*}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{github.com/devinroche}{\Large Devin Roche}} & Email : \href{mailto:roche.devin@ymail.com}{roche.devin@ymail.com}\\
+  \href{github.com/devinroche}{github.com/devinroche} & Mobile : 503-577-8269 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gonzaga University}{Spokane, WA}
+      {B.S. Computer Science; Major GPA: 3.33}{January 2019} 
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {CDK Global}{Portland, OR}
+      {Software Engineering Intern}{Summer 2017 \& 2018}
+      \resumeItemListStart
+        \resumeItem{}
+          {KPI tracking and analysis of product versions and releases.}
+        \resumeItem{}
+          {Maintained and refactored the skill searching application to be more testable and modular for future development.}
+        \resumeItem{}
+         {Developed CDK data and analytics portal.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CrowdHub}{Spokane, WA}
+      {Software Development Intern}{June 2016 - September 2016}
+      \resumeItemListStart
+        \resumeItem{}
+          {Create a live chat feature using jQuery for the companies website that allows users to chat with a company representative in real time. This was made possible with the slack api allowing me to make http requests.}
+        \resumeItem{}
+          {Convert Photoshop mockups to HTML, CSS, and JavaScript websites for clients. }
+        
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectSubheading
+      {Schedule Builder}{schedulebuilder.win}
+      \resumeItemListStart
+      \vspace{-5pt}
+        \resumeItem{}
+          {Simplifies Gonzaga course registration by allowing users to enter possible classes and we generate all possible schedules based on course catalog.}
+        \resumeItem{}
+          {Built using Angular, Node, and Express.}
+        \resumeItem{}
+         {Within the first week of deploying we reached 1100 users.}
+      \resumeItemListEnd
+    
+    \resumeProjectSubheading
+      {sparespace}{}
+      \resumeItemListStart
+      \vspace{-5pt}
+        \resumeItem{}
+          {Peer to peer storage based web application. Connect freshmen/sophomores to juniors/seniors to allow upper class students to rent out empty rooms as storage.}
+        \resumeItem{}
+          {Built using React, Node, Express, and MongoDB. }
+      \resumeItemListEnd
+      
+    \resumeProjectSubheading
+      {Recruit Hunter}{}
+      \resumeItemListStart
+      \vspace{-5pt}
+        \resumeItem{}
+          {Look up any technical company and get a list of university recruiters. Then analyze  companies email naming trends to generate possible recruiters emails.}
+        \resumeItem{}
+          {Built using Go lang.}
+      \resumeItemListEnd
+      
+      \resumeProjectSubheading
+      {mapz}{}
+      \resumeItemListStart
+      \vspace{-5pt}
+        \resumeItem{}
+          {Procedural generated 2-dimensional maps using cellular automaton.}
+        \resumeItem{}
+          {Built using JavaScript.}
+      \resumeItemListEnd
+   
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{\textbf{Frameworks}{: Node, Express, MongoDB, MySQL, Python, Angular, React, NextJS}}
+      \hfill \\
+    \item{\textbf{Technologies}{: Docker, Git, RESTful API's}}
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\section{Extracurricular Activities}
+  \resumeSubHeadingListStart
+    \item{\textbf{Gonzaga Developers Club (GU-MAD)}{: Founding member of developers club for two years. Help mentor freshman and sophomores in computer science and industry technologies.}}
+      \hfill \\
+    \item{\textbf{NCAA Division I Athletics}{: Member of cross country and track team. 20+ hours of weekly focus contributed to training and elite level competition}}
+
+  \resumeSubHeadingListEnd
+
+\end{document}
